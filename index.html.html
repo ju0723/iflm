@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I - film</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .site-header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #1a1a1a;
+        }
+        .site-logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: hsl(0, 0%, 100%);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .grid-item {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .grid-item:hover {
+            transform: scale(1.02);
+        }
+        .grid-item-title {
+            text-align: center;
+            background-color: #2a2a2a;
+            padding: 15px;
+            font-weight: bold;
+            color: #00ff00;
+        }
+        .grid-item-content {
+            padding: 20px;
+            min-height: 100px;
+        }
+        .cn-img {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+        .thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .grid-item:hover .thumbnail {
+            transform: scale(1.05);
+        }
+        .cn-title {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(to right, #1a1a1a, #2a2a2a);
+        }
+        .PLAY {
+            display: inline-block;
+            padding: 12px 40px;
+            background-color: #a7a7a785;
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0, 255, 0, 0.2);
+        }
+        .PLAY:hover {
+            background-color: #a7a7a785;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 255, 0, 0.3);
+        }
+        .PLAY:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 10px rgba(0, 255, 0, 0.2);
+        }
+        
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .site-logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <div class="site-logo">I - film</div>
+    </div>
+    <div class="grid-container">
+        <!-- Thriller A -->
+        <div class="grid-item">
+            <div class="grid-item-title">악마를 만나다 To Meet a Devil (2021)</div>
+            <div class="cn-img">
+                <img src="img/악마를보았다-스릴러.png" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 독실한 신부에게 한 남자가 찾아온다. 그는 자신이 악마라며 충격적인 얘기를 하는데.....</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=3180&sca=%EC%8A%A4%EB%A6%B4%EB%9F%AC">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Thriller B -->
+        <div class="grid-item">
+            <div class="grid-item-title">턱 미 인 Tuck Me In (2014)</div>
+            <div class="cn-img">
+                <img src="img/턱미인-스릴러.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 이불을 덮어주러 온 아빠에게 침대 밑에 괴물이 있는지 봐달라고 말하는 아들의 부탁으로 아빠는 침대 밑을 보게 되는데...</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=2804&sca=%EC%8A%A4%EB%A6%B4%EB%9F%AC">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Thriller C -->
+        <div class="grid-item">
+            <div class="grid-item-title">미스터 데스 Mr. Death(2016)</div>
+            <div class="cn-img">
+                <img src="img/미스터데스-스릴러.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 늘 일상적인 일, 죽음의 선생님 사신고의 리얼한 독점 인터뷰 </p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=2188&sca=%EC%8A%A4%EB%A6%B4%EB%9F%AC">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Drama A -->
+        <div class="grid-item">
+            <div class="grid-item-title">동창 Classmate (2020)</div>
+            <div class="cn-img">
+                <img src="img/동창-드라마.png" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 30살 카센타 알바생 성훈은 18년 만에 만나는 초등학교 동창회에 나가게 된다. 첫사랑 은주가 나온다는 소식에 들뜬 성훈은 자신의 현재 처한 모습에 실망을 하고 고민을 하게 되는데... </p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=3152&sca=%EB%93%9C%EB%9D%BC%EB%A7%88">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Drama B -->
+        <div class="grid-item">
+            <div class="grid-item-title">입김 breath (2022)</div>
+            <div class="cn-img">
+                <img src="img/입김-드라마.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 무연원의 신입사원 나래, 길을 걷다 선배의 전화를 받고 첫 업무를 시작하려 한결의 집에 찾아간다. 막상 업무를 시작하려니 그냥 빨리 끝내고 쉬고 싶은 마음뿐인 나래, 한결의 집에 간 후 향을 하나씩 피운 뒤, 한결의 이야기를 듣는데...</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=3152&sca=%EB%93%9C%EB%9D%BC%EB%A7%88">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Drama C -->
+        <div class="grid-item">
+            <div class="grid-item-title">철의 시간 Days Of Steel, Vloeibaar Staal</div>
+            <div class="cn-img">
+                <img src="img/철의시간-드라마.png" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 열일곱 살인 프랑카는 후고벤스 제철소의 공장 연기 아래에서 아버지와 함께 살고 있다. 아버지와 집안일을 돌보는 역할을 맡고 있던 그녀는, 윈드서퍼인 케스와 사랑에 빠지면서 자신과 아버지와의 관계를 새로운 눈으로 돌아보기 시작한다.</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=2161&sca=%EB%93%9C%EB%9D%BC%EB%A7%88&page=2">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Animation A -->
+        <div class="grid-item">
+            <div class="grid-item-title">당신은 누군가요? Who Are You? (2018)</div>
+            <div class="cn-img">
+                <img src="img/당신은 누군가요-애니.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 절망적인 슬럼프에 빠진 작가가 괴로움에 몸부림치고 있을 때, 의문의 상자를 든 배달부 소녀가 문 앞에 도착한다. 두 사람은 유명세와 성공에 대해 흥미로운 대화를 나누는데…글쎄, 영감이 어떤 모습으로 찾아올 지는 아무도 모를 일이다.</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=2134&sca=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Animation B -->
+        <div class="grid-item">
+            <div class="grid-item-title">샌드 Sand (2017)</div>
+            <div class="cn-img">
+                <img src="img/샌드-애니.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 5시에 일어나서 비타민을 먹고 커피를 마시며 몇 시간 일하고 오메가나 플라보노이드도 먹고 조금 더 일하고 운동하고 나서 샤워를 합니다. 하지만 머리를 씻어내려고 해도 소용없어요.</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=1903&sca=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Animation C -->
+        <div class="grid-item">
+            <div class="grid-item-title">무덤지기 The Gravedigger’s Tale (2013)</div>
+            <div class="cn-img">
+                <img src="img/무덤지기-애니.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 삶과는 너무 멀리 죽음과는 너무 가까이 무덤지기는 홀로 그 자리를 지키고 있다. 숲 저편에서 들려오는 연주만이 무덤지기의 외로움을 달랜다. 그녀를 위한 세레나데를 보내는 영원한 안식의 안내자. 그들의 애달픈 사랑 이야기</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=556&sca=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">PLAY</a>
+            </div>
+        </div>
+
+         <!-- Romance A -->
+         <div class="grid-item">
+            <div class="grid-item-title">비 온 뒤 차차 Slowly, after rain (2020)</div>
+            <div class="cn-img">
+                <img src="img/비온뒤차차-로맨스.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 소개팅을 앞두고 철거 현장에서 부상을 당하는 신우, 다리가 불편한 그녀 수정. 어느 날 소개팅 기회가 찾아오고 수정은 설레는 마음으로 소개팅에 나가게 되는데...</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=556&sca=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">PLAY</a>
+            </div>
+        </div>
+
+
+        <!-- Romance B -->
+        <div class="grid-item">
+            <div class="grid-item-title">그 길에서 우리는, Behind Her Radiance (2017)</div>
+            <div class="cn-img">
+                <img src="img/그길에서-로맨스.jpg" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 옆반의 왕따 남학생 성제가 벚꽃을 바라보고 있었다.영은은 어쩌면 자신과 비슷한 처지에 놓여있을 것 같은 성제에게 이야기를 건넨다.</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=1302&sca=%EB%A9%9C%EB%A1%9C%EB%A1%9C%EB%A7%A8%EC%8A%A4">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Romance c -->
+        <div class="grid-item">
+            <div class="grid-item-title">오늘의 파스타, Today's Pasta (2017)</div>
+            <div class="cn-img">
+                <img src="img/오늘의파스타-로맨스.png" alt="프로젝트 이미지" class="thumbnail">
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 우주는 석현과 연애한지 2년을 기념하기 위해 집에서 파스타를 해준다.석현의 마음과 우주의 마음 그둘 사이의 거리와 온도 모든게 다르다.</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=556&sca=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Animation C -->
+        <div class="grid-item">
+            <div class="grid-item-title">무덤지기 The Gravedigger's Tale (2013)</div>
+            <div class="cn-img">
+                <img src="img/무덤지기-애니.jpg" alt="프로젝트 이미지" class="thumbnail">
+                <video class="preview-video" autoplay loop>
+                    <source src="videos/무덤지기-preview.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 삶과는 너무 멀리 죽음과는 너무 가까이 무덤지기는 홀로 그 자리를 지키고 있다. 숲 저편에서 들려오는 연주만이 무덤지기의 외로움을 달랜다. 그녀를 위한 세레나데를 보내는 영원한 안식의 안내자. 그들의 애달픈 사랑 이야기</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=556&sca=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Romance A -->
+        <div class="grid-item">
+            <div class="grid-item-title">비 온 뒤 차차 Slowly, after rain (2020)</div>
+            <div class="cn-img">
+                <img src="img/비온뒤차차-로맨스.jpg" alt="프로젝트 이미지" class="thumbnail">
+                <video class="preview-video" autoplay loop>
+                    <source src="videos/비온뒤차차-preview.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 소개팅을 앞두고 철거 현장에서 부상을 당하는 신우, 다리가 불편한 그녀 수정. 어느 날 소개팅 기회가 찾아오고 수정은 설레는 마음으로 소개팅에 나가게 되는데...</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=556&sca=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98">PLAY</a>
+            </div>
+        </div>
+
+        <!-- Romance B -->
+        <div class="grid-item">
+            <div class="grid-item-title">그 길에서 우리는, Behind Her Radiance (2017)</div>
+            <div class="cn-img">
+                <img src="img/그길에서-로맨스.jpg" alt="프로젝트 이미지" class="thumbnail">
+                <video class="preview-video" autoplay loop>
+                    <source src="videos/그길에서-preview.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="grid-item-content">
+                <p>내용 : 옆반의 왕따 남학생 성제가 벚꽃을 바라보고 있었다.영은은 어쩌면 자신과 비슷한 처지에 놓여있을 것 같은 성제에게 이야기를 건넨다.</p>
+            </div>
+            <div class="cn-title">
+                <a class="PLAY" href="http://www.cinehubkorea.com/bbs/board.php?bo_table=bbs01&wr_id=1302&sca=%EB%A9%9C%EB%A1%9C%EB%A1%9C%EB%A7%A8%EC%8A%A4">PLAY</a>
+            </div>
+        </div>
+</body>
+</html>
